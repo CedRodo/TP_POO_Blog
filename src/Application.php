@@ -36,6 +36,42 @@ class Application {
         $articles->article(); //Renvoyer la vue du formulaire de connexion
     }
 
+    if ($path=='/series'){
+        include __DIR__.'/../src/Controller/ArticlesController.php';
+        $articles = new ArticlesController();
+        $articles->series(); //Renvoyer la vue du formulaire de connexion
+    }
+
+    if ($path=='/films'){
+        include __DIR__.'/../src/Controller/ArticlesController.php';
+        $articles = new ArticlesController();
+        $articles->films(); //Renvoyer la vue du formulaire de connexion
+    }
+
+    if ($path=='/jv'){
+        include __DIR__.'/../src/Controller/ArticlesController.php';
+        $articles = new ArticlesController();
+        $articles->jv(); //Renvoyer la vue du formulaire de connexion
+    }
+
+    if ($path=='/musiques'){
+        include __DIR__.'/../src/Controller/ArticlesController.php';
+        $articles = new ArticlesController();
+        $articles->musiques(); //Renvoyer la vue du formulaire de connexion
+    }
+
+    if ($path=='/livres'){
+        include __DIR__.'/../src/Controller/ArticlesController.php';
+        $articles = new ArticlesController();
+        $articles->livres(); //Renvoyer la vue du formulaire de connexion
+    }
+
+    if ($path=='/bd'){
+        include __DIR__.'/../src/Controller/ArticlesController.php';
+        $articles = new ArticlesController();
+        $articles->bd(); //Renvoyer la vue du formulaire de connexion
+    }
+
     if ($path=='/supp_article'){
         include __DIR__.'/../src/Controller/ArticlesController.php';
         $articles = new ArticlesController();
