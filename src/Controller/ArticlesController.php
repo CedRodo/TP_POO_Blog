@@ -3,17 +3,12 @@ class ArticlesController {
     public function articles(){
         include __DIR__.'/../../templates/articles.php';
     }
-
-    public function toutes_articles() {
-        include __DIR__.'/../Entity/Article.php';
-        $a = new Article();
-        $a->findAll();
-    }
     
     public function article() {
         include __DIR__.'/../Entity/Article.php';
+        $id = $_GET['id'];
         $a = new Article();
-        $a->findAll();
+        $res = $a->findOne($id);
         include __DIR__.'/../../templates/article.php';
     }
     

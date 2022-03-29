@@ -39,11 +39,6 @@ abstract class Modele {
     
             $data=implode(",", $data);
             
-            // array(2) { [0]=> string(4) "dgfd" [1]=> string(5) "dfdsf" }
-    
-    
-            // '$titre','$desc'
-            // 2 on lance notre requête 
             $sql="insert into $this->table VALUES (NULL, $data)";
        
              $this->conn->query($sql);
